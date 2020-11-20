@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="faq_flutter_module">Faq Flutter Module</string>
+    <string name="login_flutter_module">Login Flutter Module</string>
+</resources>

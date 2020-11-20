@@ -1,0 +1,8 @@
+repositories {
+    maven {
+        url '../flutter_module/build/host/outputs/repo'
+    }
+    maven {
+        url 'http://download.flutter.io'
+    }
+}
