@@ -1,5 +1,6 @@
-# Android with Flutter
-Native Android project with Flutter modules as dependencies.
+# Native Android project with Flutter modules as dependencies
+To add a flutter module as a dependency on a native project, just follow the (documentation)[https://flutter.dev/docs/development/add-to-app]. However, there are some known limitations, including the impossibility of adding multiple flutter projects in a single native project, described in this (issue)[https://github.com/flutter/flutter/issues/39707].
+To work around this problem, we created a single module that contains the modules to be added, and we exposed it to the native application. And we use a channel for the host app to inform Flutter when it wants to navigate between them.
 
 ### To compile aar follow run the commands below:
 
@@ -17,6 +18,11 @@ Get dependencies and compile Flutter module:
 ```sh
 $ flutter pub get
 $ flutter clean && flutter build aar
+```
+
+Go to android_app folder:
+```sh
+$ cd android_app/
 ```
 
 Compile native module:
